@@ -1,0 +1,145 @@
+{
+  "nickNameBot": "GoatBot",
+  "prefix": "-",
+  "language": "ar",
+  "notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
+  "timeZone": "Asia/Ho_Chi_Minh",
+  "adminBot": [],
+  "adminOnly": {
+    "enable": false,
+    "ignoreCommand": []
+  },
+  "whiteListMode": {
+    "enable": false,
+    "whiteListIds": [],
+    "notes": "if you enable this feature, only the ids in the whiteListIds list can use the bot"
+  },
+  "whiteListModeThread": {
+    "enable": false,
+    "whiteListThreadIds": [],
+    "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
+    "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
+  },
+  "facebookAccount": {
+    "email": "",
+    "password": "",
+    "2FASecret": "",
+    "i_user": "",
+    "proxy": null,
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; M2102J20SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36",
+    "intervalGetNewCookie": 1440,
+    "notes": "time the system automatically retrieves new cookies from email/password, unit is minute..."
+  },
+  "credentials": {
+    "gmailAccount": {
+      "email": "",
+      "clientId": "",
+      "clientSecret": "",
+      "refreshToken": "",
+      "apiKey": ""
+    },
+    "gRecaptcha": {
+      "siteKey": "",
+      "secretKey": ""
+    }
+  },
+  "database": {
+    "type": "sqlite",
+    "uriMongodb": "",
+    "autoSyncWhenStart": false,
+    "autoRefreshThreadInfoFirstTime": true,
+    "notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'..."
+  },
+  "notiWhenListenMqttError": {
+    "notes": "This is the message when the bot is listening to the mqtt server...",
+    "gmail": {
+      "enable": false,
+      "emailGetNoti": "",
+      "note": "Bot will use gmailAccount to send email..."
+    },
+    "telegram": {
+      "enable": false,
+      "botToken": "",
+      "chatId": "",
+      "note": "Can send notifications to many chatId..."
+    },
+    "discordHook": {
+      "enable": false,
+      "webhookUrl": "",
+      "note": "Can send notifications to many webhookUrl..."
+    }
+  },
+  "autoRestart": {
+    "time": null,
+    "notes": "you can set time is interval with milisecond or cron time..."
+  },
+  "autoUptime": {
+    "enable": false,
+    "timeInterval": 180,
+    "url": "",
+    "notes": "the value of timeInterval is seconds..."
+  },
+  "autoLoadScripts": {
+    "enable": false,
+    "ignoreCmds": "",
+    "ignoreEvents": "",
+    "notes": "this feature will automatically load the script when scripts have been changed..."
+  },
+  "autoRefreshFbstate": true,
+  "autoReloginWhenChangeAccount": false,
+  "autoRestartWhenListenMqttError": false,
+  "dashBoard": {
+    "enable": true,
+    "expireVerifyCode": 300000,
+    "port": 3001
+  },
+  "serverUptime": {
+    "enable": false,
+    "port": 3001,
+    "socket": {
+      "enable": true,
+      "channelName": "uptime",
+      "verifyToken": ""
+    }
+  },
+  "restartListenMqtt": {
+    "enable": true,
+    "timeRestart": 3600000,
+    "delayAfterStopListening": 2000,
+    "logNoti": true,
+    "notes": "the value of timeRestart and delayAfterStopListening is milisecond..."
+  },
+  "logEvents": {
+    "disableAll": false,
+    "message": true,
+    "message_reaction": true,
+    "message_unsend": true,
+    "message_reply": true,
+    "event": true,
+    "read_receipt": false,
+    "typ": false,
+    "presence": false
+  },
+  "optionsFca": {
+    "forceLogin": true,
+    "listenEvents": true,
+    "updatePresence": true,
+    "listenTyping": true,
+    "logLevel": "error",
+    "selfListen": false,
+    "selfListenEvent": true,
+    "autoMarkDelivery": false,
+    "autoReconnect": false,
+    "notes": "Document here: https://github.com/ntkhang03/nero-chat-api/blob/master/DOCS.md#apisetoptionsoptions"
+  },
+  "hideNotiMessage": {
+    "commandNotFound": false,
+    "adminOnly": false,
+    "threadBanned": false,
+    "userBanned": false,
+    "needRoleToUseCmd": false,
+    "needRoleToUseCmdOnReply": false,
+    "needRoleToUseCmdOnReaction": false
+  },
+  "antiInbox": false
+}
